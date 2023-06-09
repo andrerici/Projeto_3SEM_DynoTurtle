@@ -1,0 +1,390 @@
+/* Definições gerais */
+:root {
+    --dark: black;
+    --gray: #202020;
+    --gold: #edc531;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    animation-name: appear;
+    animation-duration: 500ms;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+/* ------------------- Header -------------------  */
+
+#headerspace {
+    background-color: var(--gray);
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icon {
+    box-sizing: border-box;
+    width: 100px;
+    height: 65px;
+    background-image: url(../img/DynoTurtle_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--gold);
+    font-size: 12pt;
+}
+
+#searchbar {
+    width: 70%;
+    height: 50px;
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--gold);
+}
+
+#userarea {
+    width: 12%;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#profile {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/user_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#car {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/cart_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* ------------------- Conteúdo -------------------  */
+
+.titles {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: solid 1px var(--gold);
+    padding: 0px 16px;
+    color: var(--gold);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.products {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: fit-content;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 27%;
+    height: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+.item {
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.description {
+    margin: 0 auto;
+    margin-top: 20px;
+    color: var(--gold);
+    width: fit-content;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--gold);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.card h4 {
+    color: white;
+    margin: 0 auto;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+
+/* Images */
+
+#i1 {
+    background-image: url(../img/notebook_dell.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i2 {
+    background-image: url(../img/celular_xioami.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i3 {
+    background-image: url(../img/impressora_HP.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i4 {
+    background-image: url(../img/Alexa.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#i5 {
+    background-image: url(../img/Chromecast.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#i6 {
+    background-image: url(../img/iPhone.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i7 {
+    background-image: url(../img/bt_fone.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i8 {
+    background-image: url(../img/teclado_logitech.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i9 {
+    background-image: url(../img/mouse.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Special Offer */
+
+.offer {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 70%;
+    height: fit-content;
+    padding: 30px 60px;
+    border-radius: 20px;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+#ofr_products {
+    margin: 0 auto;
+    width: 80%;
+    height: 230px;
+    background-image: url(../img/offer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#ofr_products:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.offer .description {
+    margin-top: 0px;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.offer h2 {
+    color: var(--gold);
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.offer h4 {
+    color: white;
+    margin: 0 auto;
+    margin-top: 3px;
+    font-weight: lighter;
+}
+
+.offer h3 {
+    color: var(--gold);
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+/* Top Products This Month */
+
+
+#i10 {
+    background-image: url(../img/iPhone.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#i11 {
+    background-image: url(../img/celular_xioami.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------------------- Footer -------------------  */
+
+footer {
+    background-color: var(--gray);
+    height: fit-content;
+    margin-top: 60px;
+    padding: 15px 10px 15px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#aboutus {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutus h3 {
+    color: var(--gold);
+    font-size: 16pt;
+    margin-bottom: 30px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../img/DynoTurtle.png);
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#logo:hover {
+    transform:rotate(180deg);
+    transition: 1.0s;
+}
+
+#redes {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    color: var(--gold);
+    font-size: 14pt;
+    align-items: center;
+    cursor: pointer;
+}
+
+#redes #instagram {
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/instagram_icon.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#redes #twitter {
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/twitter_icon.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#contato {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#ending {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 2px;
+    background-color: black;
+    text-align: center;
+    color: var(--gold);
+}

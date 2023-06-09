@@ -1,0 +1,284 @@
+/* Definições gerais */
+:root {
+    --dark: black;
+    --gray: #202020;
+    --gold: #edc531;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+/* ------------------- Header -------------------  */
+
+#headerspace {
+    background-color: var(--gray);
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icon {
+    box-sizing: border-box;
+    width: 100px;
+    height: 65px;
+    background-image: url(../img/DynoTurtle_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--gold);
+    font-size: 12pt;
+}
+
+#searchbar {
+    width: 70%;
+    height: 50px;
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--gold);
+}
+
+#userarea {
+    width: 12%;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#profile {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/user_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#car {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/cart_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* ------------------- Conteúdo -------------------  */
+
+.titles {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: solid 1px var(--gold);
+    padding: 0px 16px;
+    color: var(--gold);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cart {
+    margin-top: 40px;
+}
+
+.cart_item {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    height: 150px;
+    width: 150px;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.description {
+    margin-left: 30px;
+    color: var(--gold);
+}
+
+#i1 {
+    background-image: url(../img/celular_xioami.png);
+    background-size: cover;
+}
+
+#i2 {
+    background-image: url(../img/bt_fone.png);
+    background-size: cover;
+}
+
+#i3 {
+    background-image: url(../img/Chromecast.png);
+    background-size: cover;
+}
+
+.menu_parcelar {
+    width: fit-content;
+    height: fit-content;
+}
+
+.parcelas {
+    width: 240px;
+    height: 40px;
+    background-color: var(--dark);
+    text-align: center;
+    color: var(--gold);
+    font-size: 12pt;
+    cursor: pointer;
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+}
+
+#cart_end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#total {
+    font-size: 18pt;
+    width: fit-content;
+    color: var(--gold);
+}
+
+#buy{
+    font-size: 18pt;
+    font-weight: bolder;
+    padding: 20px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    width: fit-content;
+    color: var(--gold);
+    background-color: var(--dark);
+    cursor: pointer;
+}
+
+/* ------------------- Footer -------------------  */
+
+footer {
+    background-color: var(--gray);
+    height: fit-content;
+    margin-top: 60px;
+    padding: 15px 10px 15px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#aboutus {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutus h3 {
+    color: var(--gold);
+    font-size: 16pt;
+    margin-bottom: 30px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../img/DynoTurtle.png);
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#logo:hover {
+    transform: rotate(180deg);
+    transition: 1.0s;
+}
+
+#redes {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    color: var(--gold);
+    font-size: 14pt;
+    align-items: center;
+    cursor: pointer;
+}
+
+#redes #instagram {
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/instagram_icon.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#redes #twitter {
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/twitter_icon.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#contato {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#ending {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 2px;
+    background-color: black;
+    text-align: center;
+    color: var(--gold);
+}

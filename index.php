@@ -15,7 +15,7 @@
     <section>
         <div id="start">
             <div id="icon" alt="Ícone da empresa DynoTurtle"></div>
-            <h1>Seja bem-vindo a DynoTurtle!</h1>
+            <h1>Você está na DynoTurtle!</h1>
             <div>A sua loja de tecnologia</div>
         </div>
 
@@ -23,7 +23,7 @@
                 <fieldset>
                     <legend>Fazer Login</legend>
                     <div id="enter">
-                        <div>Usúario</div>
+                        <div>Usuário</div>
                         <input type="text" name="login" id="login">
                         <p><br>
                         <div>Senha</div>
